@@ -28,6 +28,8 @@ RESEND_API_KEY=re_your_key_here
 
 Email sending degrades gracefully — if no key is set, the PDF still downloads.
 
+> **Note on Resend's free tier:** Without a verified sending domain, Resend restricts outbound email to the account owner's address only. To send invoices to any recipient (e.g. fire department contacts), a domain would need to be verified at [resend.com/domains](https://resend.com/domains) and the `from` address updated to use that domain. This is a straightforward production step for Garage to complete.
+
 ## How it works
 
 1. The UUID is extracted from the pasted listing URL
